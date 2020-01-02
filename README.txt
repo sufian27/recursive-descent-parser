@@ -1,7 +1,6 @@
 Author: Sufian Mushtaq
 
 >>>>>> DETAILS <<<<<<
-
 The project is a recursive descent parser written in C for the following grammar:
 
 <E> --> <C><F>
@@ -56,7 +55,6 @@ Solved Expression: (UNION (CONCAT (ATOMIC a) (ATOMIC b)) (ATOMIC c))
 Input a regular expression with a period symbol (.) to represent concatenation, star (*) to represent closure, and pipe (|) to represent union. Also, for now, the program accepts terminal symbols from lower case a-z inclusive, and parentheses (). 
 
 >>>>>> COMPILE AND RUN <<<<<<
-
 Compile from the terminal using command "gcc -Wall -Werror -std=c99 rexp.c tree.c" and run the .exe file.
 
 >>>>>> FILES <<<<<<
