@@ -4,7 +4,7 @@
 #include <string.h>
 
 
-TREE parseTree; //holds the result of the part one parse
+TREE parseTree; //holds the result of the parse
 char* nextTerminal;//input array
 int valid = 0; //variable to see if a valid parse tree has been generated
 
@@ -232,7 +232,7 @@ char* evaluate(TREE t) {
 }
 
 /**
- * Driver function for Part 3, this will only run if valid = 1
+ * Driver function for solving the tree, this will only run if valid = 1
  */
 void solveTree() {
     if(valid==1) {
@@ -246,7 +246,7 @@ int main() {
     nextTerminal = (char*)malloc(sizeof(char)*100); //array of 100 characters
 
     printf("Please Enter a RegEx input: ");
-    scanf("%s", nextTerminal);//will use this in part 1
+    scanf("%s", nextTerminal);
     //starts recursive descent
     runRecursiveDescent();
 
